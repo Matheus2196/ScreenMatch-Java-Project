@@ -4,6 +4,6 @@ public class Filme {
 	int anoDeLancamento;
 	boolean incluidoNoPlano;
 	double avaliacao;
-	int totalAvaliacoes;
+	int totalDeAvaliacoes;
 	int duracaoEmMinutos;
 }
