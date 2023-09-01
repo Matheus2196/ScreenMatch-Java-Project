@@ -1,15 +1,31 @@
 package br.com.screenmatch.modelos;
 
 public class Filme {
-	public String nome;
-	 public int anoDeLancamento;
-	public boolean incluidoNoPlano;
+	private String nome;
+	private int anoDeLancamento;
+	private boolean incluidoNoPlano;
 	private  double somaDasAvaliacoes;
 	private int totalDeAvaliacoes;
-	public int duracaoEmMinutos;
+	private int duracaoEmMinutos;
 
 	public int getTotalAvaliacoes() {
 		return totalDeAvaliacoes;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public void setAnoDeLancamento(int anoDeLancamento) {
+		this.anoDeLancamento = anoDeLancamento;
+	}
+	
+	public void setIncluidoNoPlano(boolean incluidoNoPlano) {
+		this.incluidoNoPlano = incluidoNoPlano;
+	}
+	
+	public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+		this.duracaoEmMinutos = duracaoEmMinutos;
 	}
 
 	public void exibeFichaTecnica() {
