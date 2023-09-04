@@ -1,3 +1,4 @@
+import br.com.screenmatch.modelos.CalculadoraDeTempo;
 import br.com.screenmatch.modelos.Filme;
 import br.com.screenmatch.modelos.Serie;
 
@@ -12,9 +13,6 @@ public class Principal {
 		meuFilme.avalia(8);
 		meuFilme.avalia(5);
 		meuFilme.avalia(10);
-
-		System.out.println("Total de avaliaÃ§Ãµes " + meuFilme.getTotalAvaliacoes());
-		System.out.println(meuFilme.pegaMedia());
 		
 		Serie lost = new Serie();
 		lost.setNome("Lost");
@@ -25,8 +23,13 @@ public class Principal {
 		lost.setDuracaoEmMinutos(60);
 		lost.minutosPorEpisodio(50);
 		
-		System.out.println("Duração do filme: " + lost.getDuracaoEmMinutos());
+		Filme outroFilme = new Filme();
+		outroFilme.setNome("Back to the future");
+		outroFilme.setAnoDeLancamento(1985);
+		outroFilme.setDuracaoEmMinutos(180);
 		
-		
+		CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+		calculadora.inclui(meuFilme);
+		System.out.println(calculadora.getTempoTotal());
 	}
 }
