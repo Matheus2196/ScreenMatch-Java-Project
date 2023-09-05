@@ -1,3 +1,4 @@
+package br.com.screenmatch.modelos;
 import br.com.screenmatch.calculo.CalculadoraDeTempo;
 import br.com.screenmatch.modelos.Filme;
 import br.com.screenmatch.modelos.Serie;
